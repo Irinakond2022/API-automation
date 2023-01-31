@@ -24,7 +24,7 @@ public class Basics {
 		//when - submit the call , here is "http" method and resource
 		//then -validate response
 		
-	RestAssured.baseURI ="https://rahulshettyacademy.com";
+	RestAssured.baseURI ="https://academy.com";
 	String response = 
 			
 			given().log().all()

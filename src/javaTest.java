@@ -82,7 +82,7 @@ String commentID = js.get("id");
 	
 	
 	/*CASE #3: Now lets assert that our added comment (which has unique ID) is presented in response json
-	As our comment is in an arrya (in json it looks like comments[5], we need to iterate the each index and 
+	As our comment is in an array (in json it looks like comments[5], we need to iterate the each index and 
 verify if each index matches our ID).
 1. Step. Get size of all array and how many comments we have.
 

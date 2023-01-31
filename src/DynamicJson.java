@@ -27,8 +27,7 @@ public class DynamicJson {
 		System.out.println(id); 
 		/*but before running test, you should change 'aisle' value to another so that test passes posting a new book */
 		
-		System.out.println("Change#1");
-		System.out.println("Change#2");
+	
 	}
 
 	@DataProvider (name="BooksData")	 // this is to get data from external file and put a name for it for adding it to our test above.
