@@ -56,9 +56,7 @@ String commentID = js.get("id");
 	
 	//Add attachment
 	
-/* curl -D- -u admin:admin -X POST -H "X-Atlassian-Token: no-check" -F "file=@myfile.txt" http://myhost/rest/api/2/issue/TEST-123/attachments
- -u means Credentials, -X: header with value, -f: file-attachment. Remember "MultiPart method" which should be in Header part of the script. AND in header mention ("Content-type", "multipart/form-data") */
-	
+
 	given()
 	.header("X-Atlassian-Token", "no-check")
 	.pathParam("key", "25432")

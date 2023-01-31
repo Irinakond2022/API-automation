@@ -13,7 +13,7 @@ public class Basics_practice {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		RestAssured.baseURI = "https://rahulshettyacademy.com";
+		RestAssured.baseURI = "https://academy.com";
 		
 		String response = given().log().all().queryParam("key", "qaclick123").header("Content-Type", "application/json")
 				.body(payLoad.AddPlace())

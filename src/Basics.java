@@ -50,7 +50,7 @@ public class Basics {
 	
 	given().log().all().queryParam("key", "qaclick123").header("Content-Type", "application/json")
 	.body("{\n"
-			+ "\"place_id\":\""+PlaceID+"\",\n" // we add dynamic variable in "" and contamination pluses from both sides
+			+ "\"place_id\":\""+PlaceID+"\",\n" 
 			+ "\"address\":\""+NewAddress+"\",\n"
 			+ "\"key\":\"qaclick123\"\n"
 			+ "}")

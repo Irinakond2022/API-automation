@@ -32,7 +32,7 @@ System.out.println(titleFirstCourse);
 		
 	String courseTitles = js.get("courses["+i+"].title");
 	System.out.println(courseTitles);
-	System.out.println(js.get("courses["+i+"].price").toString()); // systemOutPrintln accepts only String argument so all values we convert to String
+	System.out.println(js.get("courses["+i+"].price").toString()); 
 	
 	}
 	//5. Get number of copies for RSA course
@@ -49,7 +49,7 @@ System.out.println(titleFirstCourse);
 		
 		int numberCopiesRPA = js.get("courses["+1+"].copies");
 		System.out.println(numberCopiesRPA);
-		break; // so that once loop reached RPS, not to run it for another children in array
+		break; 
 	}
 	
 	

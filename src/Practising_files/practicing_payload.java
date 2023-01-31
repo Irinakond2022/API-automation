@@ -34,7 +34,7 @@ public class practicing_payload {
 				+ "\n"
 				+ "\"purchaseAmount\": 910,\n"
 				+ "\n"
-				+ "\"website\": \"rahulshettyacademy.com\"\n"
+				+ "\"website\": \"academy.com\"\n"
 				+ "\n"
 				+ "},\n"
 				+ "\n"

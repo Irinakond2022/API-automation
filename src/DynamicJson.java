@@ -18,29 +18,28 @@ public class DynamicJson {
 		
 		String response = given().header("Content-Type", "application/json")
 				
-				.body(payLoad.AddBook("abcds", "245")) //example with one set of parameters
+				.body(payLoad.AddBook("abcds", "245")) 
 				
 				.when().post("/Library/Addbook.php/?")
 				.then().assertThat().statusCode(200).extract().response.toString;
 		JsonPath js = ReUsableMethods.rawToJson(response);
 		String id = js.get("id");
 		System.out.println(id); 
-		/*but before running test, you should change 'aisle' value to another so that test passes posting a new book */
+		
 		
 		System.out.println("Change#1");
 		System.out.println("Change#2");
 	}
 
-	@DataProvider (name="BooksData")	 // this is to get data from external file and put a name for it for adding it to our test above.
+	@DataProvider (name="BooksData")	 
 	
-	public Object [][] getData() // delete VOID (because its used when no return) and put 'Object [][]'
+	public Object [][] getData() 
 	
 	{
 		
-		//array = collection of elements
-		//multidimensional array = collection of arrays
 		
-		return new Object [][] {{"abcd","12345"}, {"esdd","5678"}}; //this is one dimenstion array. If object [][] - multi-dimensional array
+		
+		return new Object [][] {{"abcd","12345"}, {"esdd","5678"}}; 
 				
 	}
 	
